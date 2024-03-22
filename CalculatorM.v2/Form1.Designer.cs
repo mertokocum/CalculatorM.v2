@@ -31,7 +31,6 @@ namespace CalculatorM.v2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             buttonSeven = new Button();
             buttonSix = new Button();
             buttonFive = new Button();
@@ -177,83 +176,91 @@ namespace CalculatorM.v2
             // 
             // buttonEquals
             // 
+            buttonEquals.BackColor = Color.FromArgb(127, 189, 82);
             buttonEquals.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonEquals.Location = new Point(456, 343);
             buttonEquals.Name = "buttonEquals";
             buttonEquals.Size = new Size(100, 206);
             buttonEquals.TabIndex = 19;
             buttonEquals.Text = "=";
-            buttonEquals.UseVisualStyleBackColor = true;
+            buttonEquals.UseVisualStyleBackColor = false;
             buttonEquals.Click += buttonEquals_Click;
             // 
             // buttonSum
             // 
+            buttonSum.BackColor = Color.FromArgb(194, 212, 177);
             buttonSum.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonSum.Location = new Point(350, 343);
             buttonSum.Name = "buttonSum";
             buttonSum.Size = new Size(100, 100);
             buttonSum.TabIndex = 23;
             buttonSum.Text = "+";
-            buttonSum.UseVisualStyleBackColor = true;
+            buttonSum.UseVisualStyleBackColor = false;
             buttonSum.Click += math_operator_click;
             // 
             // buttonDivide
             // 
+            buttonDivide.BackColor = Color.FromArgb(194, 212, 177);
             buttonDivide.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonDivide.Location = new Point(350, 237);
             buttonDivide.Name = "buttonDivide";
             buttonDivide.Size = new Size(100, 100);
             buttonDivide.TabIndex = 21;
             buttonDivide.Text = "/";
-            buttonDivide.UseVisualStyleBackColor = true;
+            buttonDivide.UseVisualStyleBackColor = false;
             buttonDivide.Click += math_operator_click;
             // 
             // buttonMultiply
             // 
+            buttonMultiply.BackColor = Color.FromArgb(194, 212, 177);
             buttonMultiply.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonMultiply.Location = new Point(350, 131);
             buttonMultiply.Name = "buttonMultiply";
             buttonMultiply.Size = new Size(100, 100);
             buttonMultiply.TabIndex = 20;
             buttonMultiply.Text = "X";
-            buttonMultiply.UseVisualStyleBackColor = true;
+            buttonMultiply.UseVisualStyleBackColor = false;
             buttonMultiply.Click += math_operator_click;
             // 
             // buttonMinus
             // 
+            buttonMinus.BackColor = Color.FromArgb(194, 212, 177);
             buttonMinus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonMinus.Location = new Point(350, 449);
             buttonMinus.Name = "buttonMinus";
             buttonMinus.Size = new Size(100, 100);
             buttonMinus.TabIndex = 24;
             buttonMinus.Text = "-";
-            buttonMinus.UseVisualStyleBackColor = true;
+            buttonMinus.UseVisualStyleBackColor = false;
             buttonMinus.Click += math_operator_click;
             // 
             // buttonCE
             // 
+            buttonCE.BackColor = Color.FromArgb(166, 185, 146);
             buttonCE.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonCE.Location = new Point(456, 131);
             buttonCE.Name = "buttonCE";
             buttonCE.Size = new Size(100, 100);
             buttonCE.TabIndex = 26;
             buttonCE.Text = "CE";
-            buttonCE.UseVisualStyleBackColor = true;
+            buttonCE.UseVisualStyleBackColor = false;
             buttonCE.Click += buttonCE_click;
             // 
             // buttonC
             // 
+            buttonC.BackColor = Color.FromArgb(166, 185, 146);
             buttonC.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonC.Location = new Point(456, 237);
             buttonC.Name = "buttonC";
             buttonC.Size = new Size(100, 100);
             buttonC.TabIndex = 25;
             buttonC.Text = "C";
-            buttonC.UseVisualStyleBackColor = true;
+            buttonC.UseVisualStyleBackColor = false;
             buttonC.Click += buttonC_click;
             // 
             // textBoxResult
             // 
+            textBoxResult.BackColor = Color.FromArgb(162, 187, 207);
             textBoxResult.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBoxResult.Location = new Point(32, 75);
             textBoxResult.Name = "textBoxResult";
@@ -267,7 +274,7 @@ namespace CalculatorM.v2
             label_selectedOperator.AutoSize = true;
             label_selectedOperator.BackColor = Color.White;
             label_selectedOperator.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_selectedOperator.ForeColor = Color.FromArgb(162, 187, 207);
+            label_selectedOperator.ForeColor = Color.FromArgb(194, 212, 177);
             label_selectedOperator.Location = new Point(32, 27);
             label_selectedOperator.Name = "label_selectedOperator";
             label_selectedOperator.Size = new Size(0, 45);
@@ -300,12 +307,10 @@ namespace CalculatorM.v2
             Controls.Add(buttonSix);
             Controls.Add(buttonSeven);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CalculatorM";
-
             ResumeLayout(false);
             PerformLayout();
         }
